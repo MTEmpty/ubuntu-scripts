@@ -1,0 +1,26 @@
+create a local version of the conf with all the lines commented out
+$ awk '{ printf "# "; print; }' /etc/fail2ban/jail.conf | sudo tee /etc/fail2ban/jail.local
+
+edit /etc/fail2ban/jail.local
+
+ignoreip = 127.0.0.1/8
+bantime = 1800
+findtime = 600
+maxretry = 3
+destemail = admin@example.com
+sendername = Fail2Ban
+mta = sendmail
+action = %(action_mwl)s
+[nginx-http-auth]
+
+enabled = true
+
+restart the fail2ban service
+sudo service fail2ban stop
+sudo service fail2ban start
+
+check firewall rules
+sudo iptables -S
+
+https://www.raspberrypi.org/documentation/configuration/security.md
+https://www.digitalocean.com/community/tutorials/how-to-protect-an-apache-server-with-fail2ban-on-ubuntu-14-04
