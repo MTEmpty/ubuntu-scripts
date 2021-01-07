@@ -3,6 +3,12 @@ sudo apt update
 # = = = Install git = = =
 sudo apt -y install git
 
+sudo apt -y install htop
+
+sudo apt -y install neofetch
+
+sudo apt -y install ranger
+
 # Install Java
 # sudo apt install default-jdk
 
