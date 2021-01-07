@@ -22,3 +22,13 @@ lists processes and system resource usage
 `$ ranger`
 
 terminal based file explorer
+
+## cron
+
+On the off chance that cron isn't included
+
+`sudo apt install cron`
+
+`crontab -l` to list the jobs to run
+
+`crontab -e` to edit
