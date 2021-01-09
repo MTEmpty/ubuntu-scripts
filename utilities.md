@@ -47,7 +47,7 @@ linux is not super good with battery conservation by default
 
 ## firewall
 
-ufw comes with ubuntu, if it's not installed yet, run 
+ufw comes with ubuntu, if it's not installed yet, run
 `sudo apt install ufw`
 
 to enable it,
