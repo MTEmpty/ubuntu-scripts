@@ -9,6 +9,8 @@ sudo apt -y install neofetch
 
 sudo apt -y install ranger
 
+sudo apt -y install net-tools
+
 # Install Java
 # sudo apt install default-jdk
 
