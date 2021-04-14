@@ -11,6 +11,8 @@ sudo apt -y install ranger
 
 sudo apt -y install net-tools
 
+sudo apt -y install ncdu
+
 # Install Java
 # sudo apt install default-jdk
 

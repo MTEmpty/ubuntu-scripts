@@ -14,3 +14,9 @@ sudo apt-get -y install openssh-server
 # Possibly might want to run these manually as well
 # sudo ufw allow ssh
 # sudo systemctl enable sshd
+
+sudo apt-get -y install ncdu
+
+sudo apt-get -y install cron
+# crontab -l to list
+# crontab -e to edit
