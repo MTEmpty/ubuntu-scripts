@@ -1,7 +1,6 @@
 sudo apt update
 
 # = = = Install git = = =
-sudo apt -y install git
 
 sudo apt -y install htop
 
