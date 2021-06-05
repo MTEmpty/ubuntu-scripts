@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update -qq
-apt-get -q -y -o Dpkg::Use-Pty=0 upgrade -qq
+apt-get -q -y -o Dpkg::Use-Pty=0 upgrade
 apt-get autoremove -qq
 
 # Update every friday
