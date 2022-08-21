@@ -54,3 +54,5 @@ to enable it,
 `sudo ufw enable`
 
 `sudo ufw status`
+
+`sudo ufw limit ssh`
