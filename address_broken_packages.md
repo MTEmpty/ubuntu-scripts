@@ -4,7 +4,7 @@ Sometimes for what ever reason, packages might not be installed correctly
 
 This was just something that seemed useful
 
-```
+```shell
 sudo mv /var/lib/dpkg/info/<packagename>.* /tmp/
 sudo dpkg --remove --force-remove-reinstreq <packagename>
 sudo apt-get remove <packagename>
@@ -12,7 +12,8 @@ sudo apt-get autoremove && sudo apt-get autoclean
 ```
 
 This was also a little script that should be able to handle corruption in the .list files of a package
-```
+
+```shell
 cd /var/lib/dpkg/info/; \
 for i in *; do \
   if (file $i|grep -P '(?<!__DAMAGED:)[\s]data$'); then \

@@ -16,6 +16,7 @@ sudo apt-get -y install openssh-server
 # sudo systemctl enable sshd
 
 sudo apt-get -y install ncdu
+# disk usage analyzer
 
 sudo apt-get -y install cron
 # crontab -l to list
